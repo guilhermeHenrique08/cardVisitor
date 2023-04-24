@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+/* Variaveis */
+:root{
+    --text-color: white;
+    --bg-url: url(assets/bg-mobile.jpg);
+    --background-ul :rgba(255, 255, 255, 0.1);
+    --background-ul-hover: rgba(255, 255, 255, 0.05);
+    --border-ul: rgba(255, 255, 255, 0.5);
+    --background-sl-hover: rgba(255, 255, 255, 0.02);
+    --swicht-background-url:url(./assets/moon-star.svg);
+    --switch-span-bg:rgba(255, 255, 255, 0.1);
+    --switch-span-border:rgba(255, 255, 255, 0.5);
+}
+
+.light{
+    --text-color: black;
+    --bg-url :url(assets/bg-mobile-light.jpg);
+    --background-ul: rgba(0, 0, 0, 0.05);
+    --background-ul-hover: rgba(0, 0, 0, 0.02);
+    --border-ul: rgba(0, 0, 0, 0.5);
+    --background-sl-hover: rgba(0, 0, 0, 0.1);
+    --swicht-background-url:url(./assets/son.svg);
+    --switch-span-bg: rgba(0, 0, 0, 0.05);
+    --switch-span-border: rgba(0, 0, 0, 0.5);
+}
+
+body{
+    /* background-image:url(assets/bg-mobile.jpg);(url é o caminho/endereço de onde esta a img)
+    /* background:color image repeat position/size; */
+    background: var(--bg-url) no-repeat top center/cover;
+}
+
+#all{
+    width: 360px;
+    /* border: 1px solid var(--text-color); */
+    /* margin:auto right botton left; */
+    margin: 56px auto 0px; /* alinhamento de display:block */
+    padding:0 24px; /* alinhamento de display:block */
+}
+
+/* Topo */
+#top{
+    text-align: center; /* alinhamento de texto de display: block;*/
+    padding:24px;
+}
+
+#top img{
+    width: 112px;
+}
+
+#top p{
+    font-weight: 500; /* peso do elelmento */
+    line-height: 24px; /* largura da linha */
+    margin-top: 8px;
+}
+
+/* swich */
+
+#switch{
+    position: relative;
+   
+    width: 64px; /* alinhamento de display:block */
+    margin: 4px auto; /* alinhamento de display:block */
+}
+
+#switch button{
+    background:white var(--swicht-background-url) no-repeat center ;
+    
+    width: 32px;
+    height: 32px;
+    
+    border:0px;
+    border-radius: 50% ;
+    
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transform: translateY(-50%); /* alinhamento de position: absolute; */
+    top: 50%; /* alinhamento de position: absolute; */
+}
+
+.light #switch button{
+    left: initial;
+    right: 0;
+}
+
+#switch span{
+    display:block;
+    
+    width: 64px;
+    Height:24px;
+
+    background: var(--switch-span-bg);
+   
+    border-radius: 9999px;
+    border: 1px solid var(--switch-span-border);
+    
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: bluer(4px); 
+}
+
+/* Links */
+
+ul{
+    list-style: none;/* nesse caso usado para tira a "bolinha" da Lista  */
+
+    display:flex;
+    flex-direction: column; /* direcionamento por coluna do Display:flex*/
+    gap: 8px; /* espaçamento entre os elementos do Display:flex */
+    padding:24px 0;
+}
+
+ul li a{
+    display:flex; 
+    align-items: center; /* Centralização do elemento do Display:flex*/
+    justify-content: center; /* Centralização do elemento do Display:flex*/
+
+    padding:16px 24px;
+
+    background:var(--background-ul);
+    border-radius: 8px; /* é a curvatura da borda  */
+    border: 1px solid var(--border-ul) ;
+
+    backdrop-filter: bluer(4px); /* Bluer(Mancha) no elemnento */
+    -webkit-backdrop-filter: bluer(4px); /* Para o safari(browser) conseguir indentificaro Bluer */
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: background 0.2s;
+}
+
+/* pseudo-selector */
+
+ul li a:hover{
+    background: var(--background-ul-hover);
+    border: 1.5px solid var(--text-color) ; 
+}
+
+/* Redes Sociais */
+
+#social-links{
+    display: flex;
+    justify-content: center;
+    
+    padding: 24px 0;
+
+    font-size: 24px;
+}
+
+#social-links a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+
+    transition: background 0.2;
+    border-radius: 50%;
+}
+
+#social-links a:hover{
+    background: var(--background-sl-hover);
+}
+
+/* Rodape */
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;   
+
+    padding: 24px 0px;
+    font-size: 14px;
+}
