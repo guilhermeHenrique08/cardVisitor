@@ -40,7 +40,8 @@ body{
 }
 
 #all{
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     /* border: 1px solid var(--text-color); */
     /* margin:auto right botton left; */
     margin: 56px auto 0px; /* alinhamento de display:block */
