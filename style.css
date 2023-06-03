@@ -12,6 +12,8 @@
 :root{
     --text-color: white;
     --bg-url: url(assets/bg-mobile.jpg);
+    --scrollbar-color:#151216;
+    --scrollbar-thumb:#F5F6F8;
     --background-ul :rgba(255, 255, 255, 0.1);
     --background-ul-hover: rgba(255, 255, 255, 0.05);
     --border-ul: rgba(255, 255, 255, 0.5);
@@ -26,6 +28,8 @@
 .light{
     --text-color: black;
     --bg-url :url(assets/bg-mobile-light.jpg);
+    --scrollbar-color:#F5F6F8;
+    --scrollbar-thumb:#151216;
     --background-ul: rgba(0, 0, 0, 0.05);
     --background-ul-hover: rgba(0, 0, 0, 0.02);
     --border-ul: rgba(0, 0, 0, 0.5);
@@ -35,6 +39,20 @@
     --switch-btn-hover:rgba(0, 0, 0, 0.1);
     --switch-span-bg: rgba(0, 0, 0, 0.05);
     --switch-span-border: rgba(0, 0, 0, 0.5);
+}
+
+/* Scrol (Rolagem) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-color);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 3px;
 }
 
 body{
