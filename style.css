@@ -11,7 +11,7 @@
 /* Variaveis */
 :root{
     --text-color: white;
-    --bg-url: url(assets/bg-mobile.jpg);
+    --bg-url: url(assets/bg-desktop.jpg);
     --scrollbar-color:#151216;
     --scrollbar-thumb:#F5F6F8;
     --background-ul :rgba(255, 255, 255, 0.1);
@@ -27,7 +27,7 @@
 
 .light{
     --text-color: black;
-    --bg-url :url(assets/bg-mobile-light.jpg);
+    --bg-url :url(assets/bg-desktop-light.jpg);
     --scrollbar-color:#F5F6F8;
     --scrollbar-thumb:#151216;
     --background-ul: rgba(0, 0, 0, 0.05);
@@ -79,8 +79,13 @@ body{
 
 #top img{
     width: 112px;
-    border:2px var(--border-img);
     border-radius: 50%;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+#top img:hover{
+    transform: scale(1.05);
 }
 
 #top p{
@@ -219,13 +224,15 @@ footer {
 @media (min-widht: 700px) {
 
     :root{
-        --bg-url:url(./assets/bg-desktop.jpg);
+        --bg-url:url(./assets/bg-mobile.jpg);
     }
     .light{
-        --bg-url:url(./assets/bg-desktop-light.jpg);
+        --bg-url:url(./assets/bg-mobile-light.jpg);
     }
 
 }
+
+/* Animação */
 
 @keyframes slide-in {
     from{
