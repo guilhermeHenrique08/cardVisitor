@@ -16,6 +16,7 @@
     --background-ul-hover: rgba(255, 255, 255, 0.05);
     --border-ul: rgba(255, 255, 255, 0.5);
     --background-sl-hover: rgba(255, 255, 255, 0.02);
+    --border-img:white;
     --swicht-background-url:url(./assets/moon-star.svg);
     --switch-span-bg:rgba(255, 255, 255, 0.1);
     --switch-span-border:rgba(255, 255, 255, 0.5);
@@ -28,6 +29,7 @@
     --background-ul-hover: rgba(0, 0, 0, 0.02);
     --border-ul: rgba(0, 0, 0, 0.5);
     --background-sl-hover: rgba(0, 0, 0, 0.1);
+    --border-img:black;
     --swicht-background-url:url(./assets/son.svg);
     --switch-span-bg: rgba(0, 0, 0, 0.05);
     --switch-span-border: rgba(0, 0, 0, 0.5);
@@ -57,6 +59,8 @@ body{
 
 #top img{
     width: 112px;
+    border:2px var(--border-img);
+    border-radius: 50%;
 }
 
 #top p{
