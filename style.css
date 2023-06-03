@@ -15,9 +15,10 @@
     --background-ul :rgba(255, 255, 255, 0.1);
     --background-ul-hover: rgba(255, 255, 255, 0.05);
     --border-ul: rgba(255, 255, 255, 0.5);
-    --background-sl-hover: rgba(255, 255, 255, 0.02);
+    --background-sl-hover: rgba(255, 255, 255, 0.226);
     --border-img:white;
     --swicht-background-url:url(./assets/moon-star.svg);
+    --switch-btn-hover:rgba(255, 255, 255, 0.24);
     --switch-span-bg:rgba(255, 255, 255, 0.1);
     --switch-span-border:rgba(255, 255, 255, 0.5);
 }
@@ -31,6 +32,7 @@
     --background-sl-hover: rgba(0, 0, 0, 0.1);
     --border-img:black;
     --swicht-background-url:url(./assets/son.svg);
+    --switch-btn-hover:rgba(0, 0, 0, 0.1);
     --switch-span-bg: rgba(0, 0, 0, 0.05);
     --switch-span-border: rgba(0, 0, 0, 0.5);
 }
@@ -101,7 +103,7 @@ body{
 }
 
 #switch button:hover{
-    outline: 8px solid var(--switch-span-border);
+    outline: 8px solid var(--switch-btn-hover);
 }
 
 #switch span{
